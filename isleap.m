@@ -32,7 +32,7 @@ function x=isleap(varargin)
 
 %Input Error handling
 p = inputParser;
-addOptional(p,'Y',year(now),@(x) validateattributes(x,{'numeric'},{'row','real','finite','integer','nonnan','positive','>',1582}))
+addOptional(p,'Y',year(datetime('now')),@(x) validateattributes(x,{'numeric'},{'row','real','finite','integer','nonnan','positive','>',1582}))
 parse(p,varargin{:});
 
 % The Gregorian calendar has 97 leap years every 400 years: 
