@@ -1,3 +1,5 @@
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=dnafinder/isleap)
+
 🔢 isleap.m — MATLAB Leap Year Checker
 
 isleap.m is a simple and reliable MATLAB function that checks whether a given year (or vector of years) is a leap year in the Gregorian calendar. The function supports scalar and vector input, performs strict input validation, and defaults to the current year if no argument is provided.
