@@ -21,7 +21,7 @@ function x = isleap(varargin)
 %   Author and citation:
 %   ------------------------------------------------------------------
 %   Created by:  Giuseppe Cardillo
-%   E-mail:      giuseppe.cardillo-edta@poste.it
+%   E-mail:      giuseppe.cardillo.75@gmail.com
 %
 %   To cite this file:
 %   Cardillo G. (2007). isleap.m – A simple MATLAB routine to test
@@ -52,3 +52,4 @@ Y = p.Results.Y;
 x = (~mod(Y,4) & (mod(Y,100) | ~mod(Y,400)));
 
 end
+
