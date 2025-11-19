@@ -1,31 +1,58 @@
-# isleap
-ISLEAP True for leap year.<br/>
-    ISLEAP(Year) returns 1 if Year is a leap year and 0 otherwise.
-    ISLEAP is only set for gregorian calendar, so Year >= 1583
+🔢 isleap.m — MATLAB Leap Year Checker
 
-Syntax: 	ISLEAP(YEAR)
-     
-    Inputs:
-          YEAR - Year of interest (default = current year). 
-          You can input a vector of years.
-    Outputs:
-          Logical vector.
+isleap.m is a simple and reliable MATLAB function that checks whether a given year (or vector of years) is a leap year in the Gregorian calendar. The function supports scalar and vector input, performs strict input validation, and defaults to the current year if no argument is provided.
 
-     Example: 
+✨ Features
 
-          Calling on Matlab the function: isleap
+🔍 Tests any year ≥ 1583 (Gregorian calendar)
 
-          Answer is: 0
+📅 Supports scalar or vector input
 
+⚙️ Uses the official leap-year definition (4 / 100 / 400 rules)
 
-          Calling on Matlab the function: x=isleap([2007 2008])
+🔧 Uses MATLAB’s inputParser for robust parameter checking
 
-          Answer is:
-          x = 0 1
+📘 Includes full help section and English inline comments
 
-          Created by Giuseppe Cardillo
-          giuseppe.cardillo-edta@poste.it
-          Modified after Simon Jan suggestions
-To cite this file, this would be an appropriate format:
-Cardillo G. (2007) Isleap: a simple routine to test if a year is leap.
-http://www.mathworks.com/matlabcentral/fileexchange/14172
+📦 Repository
+
+GitHub: https://github.com/dnafinder/isleap
+
+🛠 Requirements
+
+Compatible with all modern MATLAB versions.
+
+🚀 Usage
+
+Call without arguments to test the current year:
+isleap
+
+Test specific years:
+isleap(2008)
+isleap([2007 2008]) → returns 0 1
+
+🧠 Function summary
+
+isleap(year)
+
+Input:
+• year — integer ≥ 1583, scalar or vector (default: current year)
+
+Output:
+• logical vector indicating leap years
+
+📚 Citation
+
+If you use this function in research, teaching material, or publications, please cite:
+
+Cardillo G. (2007). isleap.m – A simple MATLAB routine to test whether a year is a leap year in the Gregorian calendar.
+GitHub: https://github.com/dnafinder/isleap
+
+🔑 License
+
+See the LICENSE file in the repository for details.
+
+👤 Author
+
+Giuseppe Cardillo
+Email: giuseppe.cardillo.75@gmail.com
